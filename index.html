@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BMW M Series</title>
+
+<style>
+
+/* CSS3 VARIABLES */
+
+:root{
+--bmw-blue:#1c69d4;
+--dark:#000;
+--card:#111;
+}
+
+/* GLOBAL */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:var(--dark);
+color:white;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:black;
+position:sticky;
+top:0;
+border-bottom:1px solid #222;
+z-index:1000;
+}
+
+.logo{
+width:28px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--bmw-blue);
+}
+
+/* HERO */
+
+.hero{
+height:80vh;
+background:url("https://images.unsplash.com/photo-1617814065893-b0c09a37a1f1") center/cover no-repeat;
+display:flex;
+align-items:center;
+padding-left:80px;
+animation:fadeIn 2s ease;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(40px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+/* HISTORY */
+
+.history{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+line-height:1.7;
+}
+
+/* MODEL GRID */
+
+.models{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:60px;
+}
+
+.card{
+background:var(--card);
+border-radius:10px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border:1px solid var(--bmw-blue);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+button{
+background:var(--bmw-blue);
+border:none;
+padding:10px 15px;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0f4ea8;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+background:#050505;
+color:#aaa;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" class="logo">
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>BMW M Series</h1>
+
+</section>
+
+<section class="history">
+
+<h2>History of BMW M</h2>
+
+<p>
+
+BMW M was founded in 1972 as the motorsport division of BMW.
+
+The first M road car was the legendary BMW M1 in 1978.
+
+Over time, BMW developed high-performance versions of many models including the M2, M3, M4, M5 and M8.
+
+Today BMW M cars combine racing technology with luxury and everyday usability.
+
+</p>
+
+</section>
+
+<section class="models">
+
+<div class="card">
+
+<img src="https://hips.hearstapps.com/hmg-prod/images/bmw-m2-zandvoort-blue-046-6426fb231b11c.jpg?crop=1.00xw:0.847xh;0,0.0536xh&resize=640:*">
+
+<div class="card-content">
+
+<h3>BMW M2</h3>
+
+<p>Compact performance coupe.</p>
+
+<a href="m2.html">
+<button>Explore</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://www.lloydmotorgroup.com/VehicleLibrary/553155-1xoIIw2GwU6Ew34EwXIhtw.jpg?height=648.75&heightratio=0.75&mode=crop&upscale=true&width=865">
+
+<div class="card-content">
+
+<h3>BMW M3</h3>
+
+<p>Legendary performance sedan.</p>
+
+<a href="m3.html">
+<button>Explore</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/M4-Competition/11702/1762778618869/front-left-side-47.jpg">
+
+<div class="card-content">
+
+<h3>BMW M4</h3>
+
+<p>High performance coupe.</p>
+
+<a href="m4.html">
+<button>Explore</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://i.ytimg.com/vi/iZt7Fwu91FI/maxresdefault.jpg">
+
+<div class="card-content">
+
+<h3>BMW M5</h3>
+
+<p>Luxury performance sedan.</p>
+
+<a href="m5.html">
+<button>Explore</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/M8-Coupe-Competition/10583/1762779385889/front-left-side-47.jpg">
+
+<div class="card-content">
+
+<h3>BMW M8</h3>
+
+<p>Flagship performance coupe.</p>
+
+<a href="m8.html">
+<button>Explore</button>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>BMW M Series Showcase 2026</p>
+
+</footer>
+
+</body>
+</html>
